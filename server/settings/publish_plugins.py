@@ -472,7 +472,8 @@ DEFAULT_DEADLINE_PLUGINS_SETTINGS = {
           "host_names": [
             "nuke",
             "fusion",
-            "aftereffects"
+            "aftereffects",
+            "cavalry"
           ],
           "task_names": [],
           "task_types": [],
@@ -579,6 +580,12 @@ DEFAULT_DEADLINE_PLUGINS_SETTINGS = {
             },
             {
                 "name": "fusion",
+                "value": [
+                    ".*"
+                ]
+            },
+            {
+                "name": "cavalry",
                 "value": [
                     ".*"
                 ]

@@ -1,0 +1,51 @@
+[SceneFile]
+Type=filename
+Label=Scene Filename
+Category=Scene File
+CategoryOrder=0
+Index=0
+Description=The path to the Cavalry scene file (.cv).
+Required=false
+DisableIfBlank=true
+
+[OutputDirectory]
+Type=folder
+Label=Output Directory
+Category=Output
+CategoryOrder=1
+Index=0
+Description=The output directory for rendered files. If blank, the scene's project render path is used.
+Required=false
+DisableIfBlank=true
+
+[OutputName]
+Type=string
+Label=Output Filename Prefix
+Category=Output
+CategoryOrder=1
+Index=1
+Description=The filename prefix for rendered output files.
+Required=false
+DisableIfBlank=true
+
+[Format]
+Type=enum
+Values=png;jpeg;svg;gif;apng;webm;webp;mp4;quicktime;audio
+Label=Output Format
+Category=Output
+CategoryOrder=1
+Index=2
+Default=png
+Description=The output format for rendered files.
+Required=false
+DisableIfBlank=true
+
+[Composition]
+Type=string
+Label=Composition ID
+Category=Cavalry Settings
+CategoryOrder=2
+Index=0
+Description=The ID of the composition to render (e.g. compNode#1). Leave blank to use the scene default.
+Required=false
+DisableIfBlank=true
